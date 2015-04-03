@@ -43,7 +43,7 @@ body {
   min-height: 100%;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,1);
-  transition: box-shadow 10s;
+  transition: box-shadow 5s;
 }
 
 .site-wrapper.loaded {
@@ -134,23 +134,23 @@ body {
 }
 
 .animated.delay-3s {
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
 }
 
 .animated.delay-4s {
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
 }
 
 .animated.delay-5s {
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
 }
 
 .animated.delay-6s {
-  -webkit-animation-delay: 6s;
-  -moz-animation-delay: 6s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
 }
 
 @media (min-width: 768px) {
@@ -189,6 +189,16 @@ body {
   list-style-type: none;
 }
 
+.mastfoot ul li:last-of-type {
+    font-size: 11px;
+}
+
+.mastfoot ul li:last-of-type a {
+    color: rgba(255,255,255,.5);
+}
+
+
+
 p.lead {
   overflow: hidden;
 }
@@ -216,6 +226,10 @@ p.lead {
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  .mastfoot {
+    width:100% !important;
   }
 
   .mastfoot ul li {
