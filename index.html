@@ -32,12 +32,12 @@
     <h1>Coming Soon</h1>
   </section>
   <script>
-  (function(s, h, a, n, e) {
-    var a = s.createElement(h),
-        n = s.getElementsByTagName(h)[0];
-    a.src = 'js/main.js';
-    n.parentNode.insertBefore(a, n);
-  }(document, 'script'));
+  window.onload = function(){
+    var main = document.createElement('script');
+    var placement = document.getElementsByTagName('script')[0];
+    main.src = 'js/main.js';
+    placement.parentNode.insertBefore(main, placement);
+  }
   </script>
 </body>
 </html>
