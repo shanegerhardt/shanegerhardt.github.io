@@ -11,8 +11,9 @@
   <style>
     html { font-size: 30px; }
     body { background: #aed5fa; padding: 0; margin: 0; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
-    header {color: white; background: #2196f3; position: relative; height: 100vh;}
+    header {color: white; background: #2196f3; position: relative; height: 100vh; position: relative; width: 100%; z-index: 2;}
     #name { font-size: 1rem; width: 100%; text-align: center; position: absolute; top: 40%; margin-top: -0.5rem;}
+    #content {text-align: center;}
     .loading > span { animation-name: blink; animation-duration: 1.4s; animation-iteration-count: infinite; animation-fill-mode: both; }
     .loading span:nth-child(2) { animation-delay: .2s; }
     .loading span:nth-child(3) { animation-delay: .4s; }
@@ -27,5 +28,16 @@
       </div>
     </div>
   </header>
+  <section id="content">
+    <h1>Coming Soon</h1>
+  </section>
+  <script>
+  (function(s, h, a, n, e) {
+    var a = s.createElement(h),
+        n = s.getElementsByTagName(h)[0];
+    a.src = 'js/main.js';
+    n.parentNode.insertBefore(a, n);
+  }(document, 'script'));
+  </script>
 </body>
 </html>

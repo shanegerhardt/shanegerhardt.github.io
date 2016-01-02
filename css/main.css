@@ -1,0 +1,13 @@
+.loaded header {
+  transition: height 1.3s cubic-bezier(.87,-.41,.19,1.44);
+  height: 180px;
+}
+
+.loading {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+.loaded .loading {
+  opacity: 0;
+}
