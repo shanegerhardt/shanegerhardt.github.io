@@ -15,17 +15,40 @@ function siteLoaded() {
   body.className = "loaded";
 }
 
-function loadJSON(file, callback) {
-  var xobj = new XMLHttpRequest();
-  xobj.overrideMimeType("application/json");
-  xobj.open('GET', file, true); // Replace 'my_data' with the path to your file
-  xobj.onreadystatechange = function () {
-    if (xobj.readyState == 4 && xobj.status == "200") {
-      // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-      callback(xobj.responseText);
+var XMLHttpFactories = [
+    function () {return new XMLHttpRequest()},
+    function () {return new ActiveXObject("Msxml2.XMLHTTP")},
+    function () {return new ActiveXObject("Msxml3.XMLHTTP")},
+    function () {return new ActiveXObject("Microsoft.XMLHTTP")}
+];
+
+function createXMLHTTPObject() {
+    var xmlhttp = false;
+    for (var i=0;i<XMLHttpFactories.length;i++) {
+        try {
+            xmlhttp = XMLHttpFactories[i]();
+        }
+        catch (e) {
+            continue;
+        }
+        break;
     }
-  };
-  xobj.send(null);
+    return xmlhttp;
+}
+
+function sendRequest(url,callback) {
+    var req = createXMLHTTPObject();
+    if (!req) return;
+    var method = "GET";
+    req.open(method,url,true);
+    req.onreadystatechange = function () {
+        if (req.readyState != 4) return;
+        if (req.status != 200 && req.status != 304) {
+            return;
+        }
+        callback(req.responseText);
+    }
+    req.send(null);
 }
 
 function createProjectList() {
@@ -69,15 +92,15 @@ function createProfilePicture() {
 
 loadCSS();
 createProjectList();
+sendRequest("../data.json", function(response) {
+  // Parse JSON string into object
+  var json = JSON.parse(response);
+  json = json[0]['projects'];
+  for(var i of json) {
+    createProjectItem(i['id'], i['name'], i['link']);
+  }
+ });
 setTimeout(function(){
-  loadJSON("../data.json", function(response) {
-    // Parse JSON string into object
-    var json = JSON.parse(response);
-    json = json[0]['projects'];
-    for(var i of json) {
-      createProjectItem(i['id'], i['name'], i['link']);
-    }
-   });
   createProfilePicture();
   siteLoaded();
 }, 2000);
