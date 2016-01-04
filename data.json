@@ -2,14 +2,14 @@
 	"projects": [{
 		"id": 0,
 		"name": "Green Up",
-		"link": "http://sfsuswe.com/~s13g04/"
+		"link": "#"
 	}, {
 		"id": 1,
 		"name": "Achievement Hunter",
 		"link": "#"
 	}, {
 		"id": 2,
-		"name": "sacchildrensdentist.com",
-		"link": "http://www.pbhs-sites.com/sacchildrensdentist/"
+		"name": "sacchildrensdentist",
+		"link": "#"
 	}]
 }]
