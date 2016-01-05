@@ -180,16 +180,24 @@ h1 {
   overflow: hidden;
   height: 90px;
   margin: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 90px;
+  -ms-flex: 0 0 90px;
   flex: 0 0 90px; }
 
 .project-image {
   width: auto;
   height: 100%;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
   align-self: flex-start;
   margin-left: -3px; }
 
 .project-link, .project-link:hover, .project-link:focus {
   text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
 
 .tag-list {
