@@ -132,7 +132,7 @@ function createNav() {
 
 loadCSS();
 createProjectList();
-sendRequest("../data.json", function(response) {
+sendRequest("../data.json?"+Math.random().toString(36).substr(2, 5), function(response) {
   // Parse JSON string into object
   var json = JSON.parse(response);
   json = json[0]['projects'];
