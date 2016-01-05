@@ -58,27 +58,44 @@ function createProjectList() {
   content.appendChild(ul);
 }
 
-function createProjectItem(id, name, link) {
+function createProjectItem(id, name, link, tags) {
   var ul = document.getElementById("projectList");
   var li = document.createElement("li");
   var a = document.createElement('a');
   var div = document.createElement('div');
+  var containingDiv = document.createElement('div');
   var img = document.createElement('img');
-  var span = document.createElement('span');
+  var h2 = document.createElement('h2');
   a.className = "project-link";
   a.setAttribute("href", link);
   img.src = projectDirectory+id+".png";
   img.className = "project-image";
   div.className = "project-image-wrap";
-  span.innerHTML = name;
-  span.className = "project-title";
+  h2.innerHTML = name;
+  h2.className = "project-title";
   div.appendChild(img);
   a.appendChild(div);
-  a.appendChild(span);
+  containingDiv.appendChild(h2);
+  containingDiv.appendChild(createTagList(tags));
+  a.appendChild(containingDiv);
   li.appendChild(a);
   li.setAttribute("id", "project"+id);
   ul.appendChild(li);
 }
+
+function createTagList(tags) {
+  var tagArray = tags.split(",");
+  var div = document.createElement("div");
+  div.className = "tag-list";
+  for(var i of tagArray) {
+    var span = document.createElement("span");
+    span.className = "tag";
+    span.innerHTML = i+" ";
+    div.appendChild(span);
+  }
+  return div;
+}
+
 function createProfilePicture() {
   var header = document.getElementsByTagName('header')[0];
   var div = document.createElement('div');
@@ -90,6 +107,29 @@ function createProfilePicture() {
   header.appendChild(div);
 }
 
+function createNav() {
+  var header = document.getElementsByTagName('header')[0];
+  var nav = document.createElement('nav');
+  nav.setAttribute("id", "nav");
+
+  var a = document.createElement('a');
+  a.setAttribute("id", "menuControl");
+
+  var topSpan = document.createElement('span');
+  var midSpan = document.createElement('span');
+  var bottomSpan = document.createElement('span');
+  topSpan.className = "menu-part menu-part--top";
+  midSpan.className = "menu-part menu-part--mid";
+  bottomSpan.className = "menu-part menu-part--bottom";
+  a.appendChild(topSpan);
+  a.appendChild(midSpan);
+  a.appendChild(bottomSpan);
+  nav.appendChild(a);
+  header.appendChild(nav);
+}
+
+
+
 loadCSS();
 createProjectList();
 sendRequest("../data.json", function(response) {
@@ -97,10 +137,12 @@ sendRequest("../data.json", function(response) {
   var json = JSON.parse(response);
   json = json[0]['projects'];
   for(var i of json) {
-    createProjectItem(i['id'], i['name'], i['link']);
+    console.log(i['tags']);
+    createProjectItem(i['id'], i['name'], i['link'], i['tags']);
   }
  });
 setTimeout(function(){
   createProfilePicture();
   siteLoaded();
+  createNav();
 }, 2000);

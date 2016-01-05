@@ -2,14 +2,17 @@
 	"projects": [{
 		"id": 0,
 		"name": "Green Up",
-		"link": "#"
+		"link": "#",
+		"tags": "Web Development,PHP,database,Agile,Team"
 	}, {
 		"id": 1,
 		"name": "Achievement Hunter",
-		"link": "#"
+		"link": "#",
+		"tags": "C#,Mobile Apps"
 	}, {
 		"id": 2,
 		"name": "sacchildrensdentist",
-		"link": "#"
+		"link": "#",
+		"tags": "Web Development,PHP,Libraries"
 	}]
 }]

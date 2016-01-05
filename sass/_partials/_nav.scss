@@ -1,0 +1,74 @@
+#nav {
+  height: 40px;
+  right: 0;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#menuControl {
+  display: block;
+  height: 15px;
+  width: 15px;
+  transform: rotateZ(0);
+  transition: all 0.2s ease;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.3s;
+  animation-duration: 1.3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.menu-part {
+  background: white;
+  height: 3px;
+  width: 20px;
+  opacity: 1;
+  display: block;
+  margin-bottom: 3px;
+  transform: rotateZ(0) translateY(0) translateX(0);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #0288D1;
+}
+
+#menuControl.arrow {
+  transform: rotateZ(360deg);
+}
+#menuControl.arrow .menu-part--bottom {
+  transform: rotateZ(35deg) translateY(-2px) translateX(-2px);
+  width: 12px;
+}
+#menuControl.arrow .menu-part--mid {
+  width: 18px;
+}
+#menuControl.arrow .menu-part--top {
+  transform: rotateZ(-35deg) translateY(2px) translateX(-2px);
+  width: 12px;
+}
+
+#menuControl.close,
+#menuControl:hover {
+  transform: rotateZ(360deg);
+}
+
+#menuControl.close .menu-part,
+#menuControl:hover .menu-part {
+  height: 2px;
+  border: none;
+}
+
+#menuControl.close .menu-part--bottom,
+#menuControl:hover .menu-part--bottom  {
+  transform: rotateZ(-45deg) translateX(3px) translateY(-3px);
+}
+#menuControl.close .menu-part--mid,
+#menuControl:hover .menu-part--mid {
+  opacity: 0;
+}
+#menuControl.close .menu-part--top,
+#menuControl:hover .menu-part--top {
+  transform: rotateZ(45deg) translateX(4px) translateY(4px);
+  border: none;
+}

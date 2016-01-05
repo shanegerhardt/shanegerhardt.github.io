@@ -1,0 +1,23 @@
+{
+  "name": "shanegerhardt.github.io",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanegerhardt/shanegerhardt.github.io.git"
+  },
+  "author": "Shane Gerhardt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanegerhardt/shanegerhardt.github.io/issues"
+  },
+  "homepage": "https://github.com/shanegerhardt/shanegerhardt.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  }
+}

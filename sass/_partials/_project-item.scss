@@ -1,0 +1,92 @@
+#projectList {
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
+  list-style-type: none;
+  overflow: hidden;
+}
+
+#projectList li {
+  width: 100%;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid $dividerColor;
+  transition: all 0.3s ease;
+}
+
+.project-link {
+  box-shadow: $shadowLevel0;
+  transition: all 0.3s ease;
+}
+
+.project-link:hover {
+  box-shadow: $shadowLevel3;
+}
+
+#projectList li:first-of-type {
+  border-top: 1px solid $dividerColor;
+}
+
+.project-title {
+    display: block;
+    color: $primaryText;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    font-size: 0.8rem;
+    text-decoration: none;
+    text-align: left;
+    font-weight: 400;
+}
+
+.project-image-wrap {
+  width: 50%;
+  padding: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 90px;
+  margin: 15px;
+  flex: 0 0 90px;
+}
+
+.project-image {
+  width: auto;
+  height: 100%;
+  align-self: flex-start;
+  margin-left: -3px;
+}
+
+.project-link, .project-link:hover, .project-link:focus {
+  text-decoration: none;
+  display: flex;
+}
+
+.tag-list {
+  font-size: 0.4rem;
+  padding: 0 10px;
+  text-align: left;
+}
+
+.tag {
+  display: inline-block;
+  background: #FF5252;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  padding: 4px 6px;
+  margin: 2px;
+}
+
+@media(min-width: 768px) {
+  #projectList li {
+    width: 50%;
+  }
+}
+
+@media(min-width: 991px) {
+  #projectList li {
+    width: 33.3%;
+  }
+}
