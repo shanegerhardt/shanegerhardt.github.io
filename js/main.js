@@ -64,6 +64,7 @@ function createProjectItem(id, name, link, tags) {
   var a = document.createElement('a');
   var div = document.createElement('div');
   var containingDiv = document.createElement('div');
+  var aboutDiv = document.createElement('div');
   var img = document.createElement('img');
   var h2 = document.createElement('h2');
   a.className = "project-link";
@@ -73,12 +74,14 @@ function createProjectItem(id, name, link, tags) {
   div.className = "project-image-wrap";
   h2.innerHTML = name;
   h2.className = "project-title";
+  aboutDiv.className = "project-about";
   div.appendChild(img);
   a.appendChild(div);
   containingDiv.appendChild(h2);
   containingDiv.appendChild(createTagList(tags));
   a.appendChild(containingDiv);
   li.appendChild(a);
+  li.appendChild(aboutDiv);
   li.setAttribute("id", "project"+id);
   ul.appendChild(li);
 }

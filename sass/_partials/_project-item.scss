@@ -22,7 +22,7 @@
   transition: all 0.3s ease;
 }
 
-.project-link:hover {
+#projectList li:hover .project-link {
   box-shadow: $shadowLevel3;
 }
 
@@ -70,6 +70,20 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.project-about {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background: #FF5252;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
+}
+
+#projectList li:hover .project-about {
+  height: 200px;
 }
 
 .tag-list {
