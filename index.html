@@ -1,56 +1,23 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Shane Gerhardt :: Portfolio</title>
-  <meta name="description" content="Shane Gerhardt is a bay area web developer with a degree in computer science.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <style>
-    html { font-size: 30px; }
-    body { background: white; padding: 0; margin: 0; font-family:'Roboto', sans-serif; }
-    header {color: white; background: #03A9F4; position: relative; height: 100vh; position: relative; width: 100%; z-index: 2;}
-    #name { font-size: 1rem; width: 100%; text-align: center; position: absolute; top: 40%; margin-top: -0.5rem;}
-    #content {text-align: center;}
-    .loading > span { -webkit-animation-name: blink; animation-name: blink; -webkit-animation-duration: 1.4s; animation-duration: 1.4s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
-    .loading span:nth-child(2) { -webkit-animation-delay: .2s; animation-delay: .2s; }
-    .loading span:nth-child(3) { -webkit-animation-delay: .4s; animation-delay: .4s; }
-    @-webkit-keyframes blink { 0% { opacity: 0.2; -webkit-transform: translateY(0); transform: translateY(0);} 20% { opacity: 1; -webkit-transform: translateY(-5px); transform: translateY(-5px);} 100% { opacity: 0.2; -webkit-transform: translateY(0px); transform: translateY(0px); } }
-    @keyframes blink { 0% { opacity: 0.2; -webkit-transform: translateY(0); transform: translateY(0);} 20% { opacity: 1; -webkit-transform: translateY(-5px); transform: translateY(-5px);} 100% { opacity: 0.2; -webkit-transform: translateY(0px); transform: translateY(0px); } }  </style>
-</head>
-<body>
-  <header>
-    <div id="name">
-      &lt;shanegerhardt&gt;
-      <div class="loading"><span>.</span><span>.</span><span>.</span>
-      </div>
-    </div>
-  </header>
-  <section id="content">
-    <h1>Projects</h1>
-  </section>
-  <script type="text/javascript">
-  WebFontConfig = {
-    google: { families: [ 'Roboto:400,700,300:latin' ] }
-  };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })(); </script>
-  <script>
-  window.onload = function(){
-    var main = document.createElement('script');
-    var placement = document.getElementsByTagName('script')[0];
-    main.src = 'js/main.js';
-    placement.parentNode.insertBefore(main, placement);
-  }
-  </script>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
