@@ -1,0 +1,32 @@
+.social-bar {
+  font-size: 1rem;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  margin: 2em auto;
+  overflow: hidden;
+  & > li {
+    display: block;
+    background: #fdfdfd;
+    margin: 0;
+    width: 3em;
+    height: 3em;
+    float: left;
+    border-right: 1px solid #242424;
+    &:first-of-type {
+      border-radius: 2px 0 0 2px;
+    }
+    &:last-of-type {
+      border-radius: 0 2px 2px 0;
+      border-right: none;
+    }
+    & > a {
+      color: #242424;
+      font-size: 2em;
+    }
+    &:hover {
+      background: darken(#fdfdfd, 10%);
+    }
+  }
+}

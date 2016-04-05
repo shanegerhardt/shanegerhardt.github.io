@@ -1,94 +1,43 @@
 /**
+ * Sidebar
+ */
+ #sidebar {
+   position: fixed;
+   width: 25em;
+   background: $altColor;
+   top: 0;
+   bottom: 0;
+   text-align: center;
+   padding-top: 32vh;
+ }
+
+/**
  * Site header
  */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
-    // Positioning context for the mobile navigation icon
-    position: relative;
-}
 
 .site-title {
-    font-size: 26px;
+    font-size: 2.6rem;
     font-weight: 300;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
-
+    display: block;
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
     }
 }
 
 .site-nav {
-    float: right;
-    line-height: 56px;
-
+  font-size: 1.6rem;
     .menu-icon {
         display: none;
     }
 
     .page-link {
-        color: $text-color;
+        color: white;
         line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the last one
-        &:not(:last-child) {
-            margin-right: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: $spacing-unit / 2;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-
-            &:not(:last-child) {
-                margin-right: 0;
-            }
-            margin-left: 20px;
-        }
+        display: block;
     }
 }
 
@@ -97,6 +46,10 @@
 /**
  * Site footer
  */
+
+ #footer {
+   padding-left: 25em;
+ }
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
@@ -167,12 +120,15 @@
 /**
  * Page content
  */
+ #content {
+   padding-left: 25em;
+ }
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 0 190px;
 }
 
 .page-heading {
-    font-size: 20px;
+    font-size: 4em;
 }
 
 .post-list {
@@ -187,11 +143,24 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    margin-bottom: 0;
 }
 
 .post-link {
     display: block;
     font-size: 24px;
+}
+
+.thumbnail {
+  max-width: 400px;
+  border: 3px solid #2196F3;
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 
@@ -200,43 +169,31 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+  margin-bottom: 5px;
 }
 
 .post-title {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
 }
 
 .post-content {
     margin-bottom: $spacing-unit;
+    font-size: 16px;
 
     h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
+      font-size: 22px;
+      color: #B5B5B5;
     }
 
     h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
+        font-size: 18px;
+        color: #B5B5B5;
     }
 
     h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
+        font-size: 16px;
+        color: #B5B5B5;
     }
 }
