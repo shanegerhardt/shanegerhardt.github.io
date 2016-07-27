@@ -7,5 +7,6 @@ function loadCSS(file){
   css.media = 'all';
   head.appendChild(css);
 }
-loadCSS('//' + document.location.host + 'css/main.css');
+
+loadCSS('//' + document.location.host + '/css/main.css');
 loadCSS("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
