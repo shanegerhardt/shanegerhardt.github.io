@@ -1,4 +1,26 @@
 #sidebar {
+  position: fixed;
+  background: #2196f3;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  padding-top: 32vh;
   width: 100vw;
-  transition: width 0.5s ease;
+  transition: width 0.8s ease;
+  transition-delay: 1s;
+}
+
+#content {
+    padding-left: 25em;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
 }
