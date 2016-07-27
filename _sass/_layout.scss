@@ -167,7 +167,7 @@
 .thumbnail {
   margin: 0 auto;
   display: block;
-  max-width: 400px;
+  max-width: 100%;
   border: 3px solid #2196F3;
 }
 
@@ -177,6 +177,7 @@
   }
   .thumbnail {
       display: inline;
+      max-width: 400px;
   }
 }
 
