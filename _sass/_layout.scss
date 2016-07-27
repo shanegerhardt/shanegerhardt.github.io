@@ -135,8 +135,9 @@
 /**
  * Page content
  */
+
 .page-content {
-    padding: $spacing-unit 0 190px;
+    padding: 15px 0
 }
 
 .page-heading {
@@ -164,14 +165,18 @@
 }
 
 .thumbnail {
+  margin: 0 auto;
+  display: block;
   max-width: 400px;
   border: 3px solid #2196F3;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+  .page-content {
+      padding: $spacing-unit 0 190px;
+  }
   .thumbnail {
-    margin: 0 auto;
-    display: block;
+      display: inline;
   }
 }
 
