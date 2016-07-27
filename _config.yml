@@ -19,3 +19,5 @@ linkedin_username:  shanegerhardt
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
