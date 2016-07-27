@@ -1,6 +1,6 @@
 function loadCSS(file){
-  var head  = doc.getElementsByTagName('head')[0];
-  var css  = doc.createElement('link');
+  var head  = document.getElementsByTagName('head')[0];
+  var css  = document.createElement('link');
   css.rel  = 'stylesheet';
   css.type = 'text/css';
   css.href = file;
