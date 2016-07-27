@@ -59,10 +59,6 @@
 /**
  * Site footer
  */
-
- #footer {
-   padding-left: 25em;
- }
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
@@ -128,14 +124,17 @@
     }
 }
 
+@media (min-width: 768px) {
+  #footer {
+    padding-left: 25em;
+  }
+}
+
 
 
 /**
  * Page content
  */
- #content {
-   padding-left: 25em;
- }
 .page-content {
     padding: $spacing-unit 0 190px;
 }
@@ -209,4 +208,9 @@
         font-size: 16px;
         color: #B5B5B5;
     }
+}
+@media (min-width: 768px) {
+  #content {
+    padding-left: 25em;
+  }
 }
