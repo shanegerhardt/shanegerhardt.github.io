@@ -2,13 +2,20 @@
  * Sidebar
  */
  #sidebar {
-   position: fixed;
-   width: 25em;
+   position: relative;
+   width: 100%;
    background: $altColor;
-   top: 0;
-   bottom: 0;
    text-align: center;
-   padding-top: 32vh;
+ }
+
+ @media(min-width: 768px) {
+   #sidebar {
+     position: fixed;
+     width: 25em;
+     top: 0;
+     bottom: 0;
+     padding-top: 32vh;
+   }
  }
 
 /**
@@ -30,6 +37,7 @@
 
 .site-nav {
   font-size: 1.6rem;
+  display: none;
     .menu-icon {
         display: none;
     }
@@ -41,6 +49,11 @@
     }
 }
 
+@media(min-width: 768px) {
+  .site-nav {
+    display: block;
+  }
+}
 
 
 /**

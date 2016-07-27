@@ -3,7 +3,7 @@
   padding: 0;
   text-align: center;
   list-style: none;
-  display: inline-block;
+  display: none;
   margin: 2em auto;
   overflow: hidden;
   & > li {
@@ -28,5 +28,10 @@
     &:hover {
       background: darken(#fdfdfd, 10%);
     }
+  }
+}
+@media (min-width: 768px) {
+  .social-bar {
+    display: inline-block;
   }
 }

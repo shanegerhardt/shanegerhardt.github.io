@@ -1,17 +1,6 @@
-#sidebar {
-  position: fixed;
-  background: #2196f3;
-  top: 0;
-  bottom: 0;
-  text-align: center;
-  padding-top: 32vh;
-  width: 100vw;
-  transition: width 0.8s ease;
-  transition-delay: 1s;
-}
-
 @import
         "config",
         "base",
-        "layout"
+        "layout",
+        "social-bar"
 ;
