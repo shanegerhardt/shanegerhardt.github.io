@@ -10,17 +10,8 @@
   transition-delay: 1s;
 }
 
-#content {
-    padding-left: 25em;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-}
+@import
+        "config",
+        "base",
+        "layout"
+;
