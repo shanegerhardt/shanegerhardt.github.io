@@ -4,7 +4,7 @@ title:  "GreenUp"
 date:   2016-03-29 12:00:00 -0700
 categories: projects
 ---
-[GreenUp](http://sfsuswe.com/~s13g04/) was my senior project at SFSU in 2013.
+GreenUp was my senior project at SFSU in 2013.
 
 ![GreenUp: an environmental incident reporting website ]({{ site.baseurl }}/assets/greenup.png){: .thumbnail .pull-left .pull-none-xs}
 
@@ -22,3 +22,5 @@ Ultimately this was a team project and each member helped in multiple areas of t
 
 ## What I Learned
 The biggest lesson I learned during this assignment wasn't about programming, it was about team work. There were over performers and under performers, competing ideas, heated discussion, but we were a team with one goal; releasing our product on time. Some features had to be cut and were saved for a future update but all priority one functionality was completed and released by the deadline.
+
+* This site was previously hosted at http://sfsuswe.com/~s13g04/ but has since been taken down.

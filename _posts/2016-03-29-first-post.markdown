@@ -6,15 +6,14 @@ categories: article
 ---
 Hello, I'm Shane Gerhardt.
 
-This site is hosted by github pages and is built with jekyll. Check back here
-for code snippets and how to posts on some of my favorite front end development
-techniques and tools.
+This site is hosted by GitHub pages and built with Jekyll. Check back here
+for code snippets and 'how to' posts on some of my favorite front end development
+techniques.
 
-I went through a number of different setups for building my site. Originally it was in dreamweaver, then hand coded in sublime, built on jekyll, a custom setup following google material design, but then back to jekyll.
+I went through a number of different setups for building this site. In 2008 it was built with dreamweaver. From there, I switched to sublime and basic html but I finally decided to build the site on top of Jekyll.
 
-I decided on jekyll because it allowed for a simple design and easy updates. 
+I decided on Jekyll because it allowed for easy updates and free hosting on GitHub.
 
-You can also view my [projects][projects] or learn more [about me][about].
+View my [projects][projects].
 
 [projects]: http://shanegerhardt.com/projects
-[about]:   http://shanegerhardt.com/about

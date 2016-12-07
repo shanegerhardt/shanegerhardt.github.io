@@ -1,11 +1,18 @@
-<aside id="sidebar" class="shadow-two">
+<aside id="navSidebar" class="sidebar shadow-two">
   <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
   <nav class="site-nav">
-    <a class="page-link" href="/about/">About</a>
-    <a class="page-link" href="/projects/">Projects</a>
-    <a class="page-link" href="{{ site.baseurl }}/">Articles</a>
-    <a class="page-link" href="/contact/">Contact</a>
+    <a class="page-link" href="/projects/">
+      <i class="fa fa-code"></i>
+      <span class="hidden-xs">Projects</span>
+    </a>
+    <a class="page-link" href="/articles/">
+      <i class="fa fa-pencil"></i>
+      <span class="hidden-xs">Articles</span>
+    </a>
+    <a class="page-link" href="https://twitter.com/seeshanetweet">
+      <i class="fa fa-twitter"></i>
+      <span class="hidden-xs">Twitter</span>
+    </a>
   </nav>
-  {% include social-bar.html %}
 </aside>
