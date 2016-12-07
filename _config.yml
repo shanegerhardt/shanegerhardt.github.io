@@ -11,7 +11,7 @@ email: shane.gerhardt@outlook.com
 description: > # this means to ignore newlines until "baseurl:"
   Hire Web Developer Shane Gerhardt for your project.
   Get free quotes from a professional near San Francisco, California.
-url: "https://shanegerhardt.com" # the base hostname & protocol for your site
+url: "https://www.shanegerhardt.com" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: SeeShaneTweet
 github_username:  shanegerhardt
