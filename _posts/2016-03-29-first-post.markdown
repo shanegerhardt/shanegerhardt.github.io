@@ -16,4 +16,4 @@ I decided on Jekyll because it allowed for easy updates and free hosting on GitH
 
 View my [projects][projects].
 
-[projects]: http://shanegerhardt.com/projects
+[projects]: https://www.shanegerhardt.com/projects
