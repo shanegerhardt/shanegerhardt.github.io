@@ -2,6 +2,7 @@
 layout: post
 title:  "First!"
 date:   2016-03-29 22:07:00 -0700
+author: Shane Gerhardt
 categories: article
 ---
 Hello, I'm Shane Gerhardt.

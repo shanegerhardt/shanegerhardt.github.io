@@ -2,6 +2,7 @@
 layout: post
 title:  "GreenUp"
 date:   2016-03-29 12:00:00 -0700
+author: Shane Gerhardt
 categories: projects
 ---
 GreenUp was my senior project at SFSU in 2013.

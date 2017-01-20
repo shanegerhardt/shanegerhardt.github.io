@@ -2,6 +2,7 @@
 layout: post
 title:  "Javascript30"
 date:   2016-12-12 17:39:00 -0700
+author: Shane Gerhardt
 categories: article
 ---
 Today one of my coworkers shared a link to a collection of how to videos by [Wes Bos][wesbos] called [javascript30][javascript30].
