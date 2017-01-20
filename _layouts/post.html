@@ -8,7 +8,7 @@ layout: default
     <section class="post-meta">
       <div>Written by: <a href="https://www.shanegerhardt.com/" rel="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></a></div>
       <div>Published on: <time itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></div>
-      <div>Published by: <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">shanegerhardt.com</span></span></div>
+      <div>Published by: <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><img itemprop="logo" src="https://www.shanegerhardt.com/favicon.ico"/><span itemprop="name">shanegerhardt.com</span></span></div>
       <div>Updated on: <time itemprop="dateModified" content="{{ page.datemodified | date_to_xmlschema }}">{{ page.datemodified | date: "%b %-d, %Y" }}</time></div>
     </section>
   </header>
