@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Javascript30"
-date:   2016-12-12 17:39:00 -0700
+date:   2016-12-12
+datemodified: 2017-01-19
 author: Shane Gerhardt
 categories: article
 ---

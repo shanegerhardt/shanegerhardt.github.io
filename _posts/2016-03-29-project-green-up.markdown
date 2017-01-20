@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "GreenUp"
-date:   2016-03-29 12:00:00 -0700
+date:   2016-03-29
+datemodified: 2017-01-19
 author: Shane Gerhardt
 categories: projects
 ---
