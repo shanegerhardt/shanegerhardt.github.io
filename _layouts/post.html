@@ -6,9 +6,9 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <section class="post-meta">
-      <p><a href="https://www.shanegerhardt.com/" rel="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></a></p>
-      <p>Published: <time itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-      <p>Updated: <time itemprop="dateModified" content="{{ page.datemodified | date_to_xmlschema }}">{{ page.datemodified | date: "%b %-d, %Y" }}</time></p>
+      <div>Written by: <a href="https://www.shanegerhardt.com/" rel="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></a></div>
+      <div>Published: <time itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time></div>
+      <div>Updated: <time itemprop="dateModified" content="{{ page.datemodified | date_to_xmlschema }}">{{ page.datemodified | date: "%b %-d, %Y" }}</time></div>
     </section>
   </header>
 
