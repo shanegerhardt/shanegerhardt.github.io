@@ -2,12 +2,13 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
+    <h2 class="footer-heading">Contact Information</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
+        <ul class="contact-list" itemscope itemprop="Person" itemtype="http://schema.org/Person">
+          <li itemprop="name"><span itemprop="givenName">Shane</span> <span itemprop="familyName">Gerhardt</span> | <span itemprop="jobTitle">Web Developer</span></li>
+          <li><a itemprop="email" href="mailto:sg@shanegerhardt.com">sg@shanegerhardt.com</a></li>
           <li><a href="{{ site.twitter }}">@SeeShaneTweet</a></li>
         </ul>
       </div>
