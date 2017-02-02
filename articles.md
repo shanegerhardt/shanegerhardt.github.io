@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Articles
+metatitle: Articles | Shane Gerhardt
+metadesc: Read articles by Shane Gerhardt, a professional web developer near San Francisco, California.
 permalink: /articles/
 ---
 

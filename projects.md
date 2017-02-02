@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Projects
+metatitle: Projects | Shane Gerhardt
+metadesc: View projects completed by Shane Gerhardt, a professional web developer near San Francisco, California.
 permalink: /projects/
 ---
 
