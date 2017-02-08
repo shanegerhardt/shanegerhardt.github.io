@@ -33,7 +33,7 @@
     font-size: 2.6rem;
     font-weight: 300;
     line-height: 56px;
-    letter-spacing: -1px;
+    letter-spacing: 0.01em;
     margin-bottom: 0;
     &,
     &:visited {
@@ -62,12 +62,24 @@
         display: inline-block;
         text-decoration: none;
         font-size: 2em;
+        line-height: 1em;
+        position: relative;
+        height: 100%;
         & + .page-link {
           margin: 0 0 0 0.5em;
         }
 
         span {
           display: none;
+        }
+
+        svg {
+          display: inline-block;
+          height: 1em;
+          width: auto;
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
         }
     }
 }
@@ -82,6 +94,7 @@
     .page-link {
       display: block;
       font-size: 1em;
+      height: auto;
       & + .page-link {
         margin: 0.8em 0 0 0;
       }
@@ -91,10 +104,11 @@
       &:hover span {
         text-decoration: underline;
       }
-    }
-    i {
-      min-height: 1em;
-      display: block;
+      svg {
+          margin-bottom: 0.2em;
+          transform: none;
+          position: static;
+      }
     }
   }
 }
@@ -236,7 +250,7 @@
 
 .post-title {
     font-size: 42px;
-    letter-spacing: -1px;
+    letter-spacing: 0.01em;
     line-height: 1;
 }
 

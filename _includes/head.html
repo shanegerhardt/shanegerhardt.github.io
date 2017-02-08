@@ -13,14 +13,10 @@
   <style>
     {{ styles | scssify }}
   </style>
-  <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="{{ "/css/main.css" | prepend: site.url }}" as="style" onload="this.rel='stylesheet'">
   <script>
     {% include assets.js %}
   </script>
-  <noscript>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  </noscript>
   <noscript>
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.url }}">
   </noscript>
